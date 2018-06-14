@@ -1,0 +1,200 @@
+<html lang="en">
+
+<head>
+    <!-- character encoding -->
+    <meta charset="UTF-8">
+    <!-- title tag -->
+    <title>Product/Company Page Project</title>
+    <!-- mobile-friendly viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- W3.CSS stylesheet -->
+    <link rel="stylesheet" type="text/css" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!-- custom style -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- font -->
+    <link href='https://fonts.googleapis.com/css?family=Questrial' rel='stylesheet'>
+    <style>
+        body {
+            font-family: 'Questrial';
+            font-size: 22px;
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- topnav tablet and desktop -->
+    <div class="w3-bar2 w3-bar w3-theme fixednav w3-top" id="home">
+        <a href="index.html" class="w3-bar-item w3-button">Home</a>
+        <a href="tickets.html" class="w3-bar-item2 w3-button w3-hide-small">Tickets and Season Passes</a>
+        <a href="rentals.html" class="w3-bar-item2 w3-button w3-hide-small">Rentals</a>
+        <a href="lessons.html" class="w3-bar-item2 w3-button w3-hide-small">Lessons</a>
+        <a href="ski-ride.html" class="w3-bar-item2 w3-button w3-hide-small">Ski and Ride</a>
+        <a href="javascript:void(0)" class=" w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="topNav()">&#9776;</a>
+    </div>
+    <!-- topnav mobile -->
+
+    <div id="mobileNav" class="w3-bar-block w3-theme-l4 w3-hide w3-hide-large w3-hide-medium fixednav2 w3-top">
+        <a href="tickets.html" class="w3-bar-item w3-button2 w3-hover-text-white">Tickets and Season Passes</a>
+        <a href="rentals.html" class="w3-bar-item w3-button2 w3-hover-text-white">Rentals</a>
+        <a href="lessons.html" class="w3-bar-item w3-button2 w3-hover-text-white">Lessons</a>
+        <a href="ski-ride.html" class="w3-bar-item w3-button2 w3-hover-text-white">Ski and Ride</a>
+    </div>
+
+
+    <div class="w3-container-heading w3-container w3-black">
+        <div class="w3-container w3-display-middle w3-center w3-border w3-border-white">
+            <p class="w3-jumbo">Lessons</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <img class="myImg" src="img/Untitled.jpg" alt="lessons">
+
+    </div>
+
+
+    <button onclick="accordion('1')" class="w3-button w3-block w3-left-align w3-theme">
+Kids Lessons</button>
+
+    <div id="1" class="w3-container w3-hide w3-light-blue card-padding-2">
+        <div class="w3-card-4">
+
+            <header class="w3-container w3-theme">
+                <h1>Kids Programs</h1>
+            </header>
+
+            <table class="w3-container w3-white w3-table w3-striped w3-border">
+                <tr>
+
+                    <th>Programs</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+
+                    <td>Cannon Kids Half Day</td>
+                    <td>$86</td>
+                </tr>
+                <tr>
+
+                    <td>Cannon Kids Full Day</td>
+                    <td>$111</td>
+                </tr>
+                <tr>
+
+                    <td>Tykes</td>
+                    <td>$86</td>
+                </tr>
+                <tr>
+
+                    <td>Ski or Snowboard Rental</td>
+                    <td>$25</td>
+                </tr>
+                <tr>
+
+                    <td>Lunch w/instructor</td>
+                    <td>$24</td>
+                </tr>
+                <tr>
+
+                    <td>Helmet rental</td>
+                    <td>$12</td>
+                </tr>
+            </table>
+
+        </div>
+
+    </div>
+
+    <button onclick="accordion('2')" class="w3-button w3-block w3-left-align w3-theme">
+Junior Development Program</button>
+
+    <div id="2" class="w3-container w3-hide w3-light-blue card-padding-2">
+        <div class="w3-card-4">
+
+            <header class="w3-container w3-theme">
+                <h1>Junior Development Program</h1>
+            </header>
+
+            <div class="w3-container w3-white w3-border w3-border-black">
+                <b>2018/2019 Junior Development Program</b>
+                <p>
+                    Cannon Mountain’s Junior Development Program is designed for skiers and snowboarders who visit on a regular schedule. The program offers a progression, for skiers and riders age 3 – 15 years old, looking to develop their skills on all types of terrain and to maximize the recreational experience. Our dedicated instructors work diligently to create a fun and safe learning atmosphere that cultivates age appropriate social and athletic growth while providing individualized attention within a structured group format to foster a lifelong love of snowsports.
+                </p>
+            </div>
+
+            <footer class="w3-container w3-theme w3-border w3-black">
+                <h5>By: Jimmy James</h5>
+            </footer>
+
+
+
+        </div>
+
+
+
+    </div>
+
+    <button onclick="accordion('3')" class="w3-button w3-block w3-left-align w3-theme">
+Adult Programs</button>
+
+    <div id="3" class="w3-container w3-hide w3-light-blue card-padding-2">
+        <div class="w3-card-4">
+
+            <header class="w3-container w3-theme">
+                <h1>Woman's Ski Group</h1>
+            </header>
+
+            <div class="w3-container w3-white w3-border w3-border-black">
+                <b>Women's Ski Group - $35 per session</b>
+                <p>Based around the schedule of moms with children in the race & seasonal programs. No kids in the programs? That's fine! Drop-ins are also welcome at any time! Program runs every Saturday from December 30 until the last Saturday in March. There is also a Tuesday women's group which runs from 9:45 - 11:45am. It will emphasize skill building from one week to the next, though drop-ins are encouraged and welcomed.</p>
+
+                <p>Your instructor Randy Trainor is a Level 3 certified instructor and has taught skiing in Colorado, New Zealand, and Austria and at Attitash and Loon Mountains. She was a race coach for the Franconia Ski Club for 7 years and has been teaching the women's clinics here at Cannon for the past 6 years. Helping Randy is Donna Kaye Erwin, also a Level 3 certified instructor.
+
+                </p>
+            </div>
+
+            <footer class="w3-container w3-theme w3-border w3-black">
+                <h5>By: Jimmy James</h5>
+            </footer>
+
+
+
+        </div>
+        <div class="w3-container">
+            <h1 class="w3-text-light-blue">
+                Herro
+            </h1>
+        </div>
+        <div class="w3-card-4">
+
+            <header class="w3-container w3-theme">
+                <h1>Men's Ski Group</h1>
+            </header>
+
+            <div class="w3-container w3-white w3-border w3-border-black">
+                <b>Men's Ski Program - $35 per session</b>
+                <p>The men’s seasonal program will focus on giving men an affordable opportunity to explore Cannon’s terrain and will focus on improving your skiing skills to obtain optimal mountain experience. This program will run this Saturday, December 16 and then on SATURDAYS starting January 6 through March 3 at 9:45am -11:45am and will emphasize skill building from one week to the next, though drop-ins are encouraged and welcomed.</p>
+
+                <p>Your Instructor, LT (Leighton Terwilliger), is a PSIA Level 3 certified instructor with over 28 years of experience. The class enjoys the same instructor each week and will focus on improving your skiing skills so that you will advance your skiing ability to ski all of Cannon Mountain by the end of the season. We will also tackle some topics to improve your skills for mogul skiing, tree skiing, crud skiing, powder skiing and spring skiing. Intermediates and advanced skiers are welcome to join. If you want to improve your skiing, this is the place!</p>
+            </div>
+
+            <footer class="w3-container w3-theme w3-border w3-black">
+                <h5>By: Jimmy James</h5>
+            </footer>
+
+
+
+        </div>
+
+
+
+    </div>
+    <!-- javascript -->
+    <script src="js/topNav.js"></script>
+    <script src="js/accordion.js"></script>
+
+</body>
+
+</html>

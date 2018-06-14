@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <!-- character encoding -->
+    <meta charset="UTF-8">
+    <!-- title tag -->
+    <title>Product/Company Page Project</title>
+    <!-- mobile-friendly viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- W3.CSS stylesheet -->
+    <link rel="stylesheet" type="text/css" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!-- custom style -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- font -->
+    <link href='https://fonts.googleapis.com/css?family=Questrial' rel='stylesheet'>
+    <style>
+        body {
+            font-family: 'Questrial';
+            font-size: 22px;
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- topnav tablet and desktop -->
+    <div class="w3-bar2 w3-bar w3-theme fixednav w3-top" id="home">
+        <a href="index.html" class="w3-bar-item w3-button">Home</a>
+        <a href="tickets.html" class="w3-bar-item2 w3-button w3-hide-small">Tickets and Season Passes</a>
+        <a href="rentals.html" class="w3-bar-item2 w3-button w3-hide-small">Rentals</a>
+        <a href="lessons.html" class="w3-bar-item2 w3-button w3-hide-small">Lessons</a>
+        <a href="ski-ride.html" class="w3-bar-item2 w3-button w3-hide-small">Ski and Ride</a>
+        <a href="javascript:void(0)" class=" w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="topNav()">&#9776;</a>
+    </div>
+    <!-- topnav mobile -->
+
+    <div id="mobileNav" class="w3-bar-block w3-theme-l4 w3-hide w3-hide-large w3-hide-medium fixednav2 w3-top">
+        <a href="tickets.html" class="w3-bar-item w3-button2 w3-hover-text-white">Tickets and Season Passes</a>
+        <a href="rentals.html" class="w3-bar-item w3-button2 w3-hover-text-white">Rentals</a>
+        <a href="lessons.html" class="w3-bar-item w3-button2 w3-hover-text-white">Lessons</a>
+        <a href="ski-ride.html" class="w3-bar-item w3-button2 w3-hover-text-white">Ski and Ride</a>
+    </div>
+
+    <div class="w3-container-heading w3-container w3-black">
+        <div class="w3-container w3-display-middle w3-center w3-border w3-border-white">
+            <p class="w3-jumbo">Ski and Ride</p>
+        </div>
+    </div>
+
+
+
+    <button onclick="accordion('1')" class="w3-button w3-block w3-left-align w3-theme">
+Snow Report</button>
+
+    <div id="1" class="w3-container w3-hide w3-light-blue card-padding-2">
+        <div class="w3-card-4">
+
+            <header class="w3-container w3-theme">
+                <h1>The Snow Report</h1>
+            </header>
+
+            <div class="w3-container w3-white w3-border w3-border-black">
+                <p>Affronting discretion as do is announcing. Now months esteem oppose nearer enable too six. She numerous unlocked you perceive speedily. Affixed offence spirits or ye of offices between. Real on shot it were four an as. Absolute bachelor rendered six nay you juvenile. Vanity entire an chatty to. To they four in love. Settling you has separate supplied bed. Concluded resembled suspected his resources curiosity joy. Led all cottage met enabled attempt through talking delight. Dare he feet my tell busy. Considered imprudence of he friendship boisterous. Pleased him another was settled for. Moreover end horrible endeavor entrance any families. Income appear extent on of thrown in admire. Stanhill on we if vicinity material in. Saw him smallest you provided ecstatic supplied. Garret wanted expect remain as mr. Covered parlors concern we express in visited to do. Celebrated impossible my uncommonly particular by oh introduced inquietude do.
+                </p>
+            </div>
+
+            <footer class="w3-container w3-theme w3-border w3-black">
+                <h5>By: Jimmy James</h5>
+            </footer>
+
+
+
+        </div>
+
+
+
+    </div>
+
+
+    <button onclick="accordion('2')" class="w3-button w3-block w3-left-align w3-theme">
+Trail/lift report</button>
+
+    <div id="2" class="w3-container w3-hide w3-light-blue card-padding-2">
+        <div class="w3-card-4">
+
+            <header class="w3-container w3-blue w3-theme">
+                <h2>Trail Status</h2>
+            </header>
+
+            <table class="w3-container w3-table w3-striped w3-white w3-border w3-border-black">
+                <tr>
+                    <th>Trail</th>
+                    <th>Status</th>
+                    <th>Condition</th>
+                </tr>
+                <tr>
+                    <td>Upper Cannon</td>
+                    <td>Open</td>
+                    <td>Groomed</td>
+                </tr>
+                <tr>
+                    <td>Lower Hardscrabble</td>
+                    <td>Closed</td>
+                    <td>n/a</td>
+                </tr>
+                <tr>
+                    <td>Gremlin</td>
+                    <td>Open</td>
+                    <td>Packed Powder</td>
+                </tr>
+            </table>
+        </div>
+
+        <footer class="w3-container w3-theme w3-border w3-border-black">
+            <h5>By: Jimmy James</h5>
+        </footer>
+
+    </div>
+    <button onclick="accordion('3')" class="w3-button w3-block w3-left-align w3-theme">
+Map</button>
+
+    <div id="3" class="w3-container w3-hide w3-light-blue card-padding-2">
+        <div class="container">
+
+            <img id="myImg" src="img/Trailmap.jpg">
+
+        </div>
+
+    </div>
+
+
+
+
+    <!-- javascript -->
+    <script src="js/topNav.js"></script>
+    <script src="js/accordion.js"></script>
+
+</body>
+
+</html>

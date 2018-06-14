@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <!-- character encoding -->
+    <meta charset="UTF-8">
+    <!-- title tag -->
+    <title>Product/Company Page Project</title>
+    <!-- mobile-friendly viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- W3.CSS stylesheet -->
+    <link rel="stylesheet" type="text/css" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!-- custom style -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- font -->
+    <link href='https://fonts.googleapis.com/css?family=Questrial' rel='stylesheet'>
+    <style>
+        body {
+            font-family: 'Questrial';
+            font-size: 22px;
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- topnav tablet and desktop -->
+    <div class="w3-bar2 w3-bar w3-theme fixednav w3-top" id="home">
+        <a href="index.html" class="w3-bar-item w3-button">Home</a>
+        <a href="tickets.html" class="w3-bar-item2 w3-button w3-hide-small">Tickets and Season Passes</a>
+        <a href="rentals.html" target="_self" class="w3-bar-item2 w3-button w3-hide-small">Rentals</a>
+        <a href="lessons.html" target="_self" class="w3-bar-item2 w3-button w3-hide-small">Lessons</a>
+        <a href="ski-ride.html" target="_self" class="w3-bar-item2 w3-button w3-hide-small">Ski and Ride</a>
+        <a href="javascript:void(0)" class=" w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="topNav()">&#9776;</a>
+    </div>
+    <!-- topnav mobile -->
+
+    <div id="mobileNav" class="w3-bar-block w3-theme-l4 w3-hide w3-hide-large w3-hide-medium fixednav2 w3-top">
+        <a href="tickets.html" class="w3-bar-item w3-button2 w3-hover-text-white">Tickets and Season Passes</a>
+        <a href="rentals.html" class="w3-bar-item w3-button2 w3-hover-text-white">Rentals</a>
+        <a href="lessons.html" class="w3-bar-item w3-button2 w3-hover-text-white">Lessons</a>
+        <a href="ski-ride.html" class="w3-bar-item w3-button2 w3-hover-text-white">Ski and Ride</a>
+    </div>
+
+
+    <!-- Header -->
+    <div class="w3-container-heading w3-container w3-black">
+        <div class="w3-container w3-display-middle w3-center w3-border w3-border-white">
+            <p class="w3-jumbo">Tickets & Pricing</p>
+        </div>
+    </div>
+    
+    <div>
+        <img class="myImg" src="img/powderday.jpg" alt="powdah">
+    </div>
+    
+    <button onclick="accordion('1')" class="w3-button w3-block w3-left-align w3-theme">
+Rental Shop</button>
+
+
+    <div id="1" class="w3-container w3-hide w3-light-blue card-padding-2">
+        <div class="w3-card-4">
+            <header class="w3-container w3-theme">
+                <h1>Lift Tickets</h1>
+            </header>
+
+
+            <table class="w3-container w3-table w3-striped w3-bordered w3-white">
+                <tr>
+                    <th>Person</th>
+                    <th>Full Day</th>
+                    <th>1/2 Day</th>
+                    
+                </tr>
+                <tr>
+                    <td>NH Senior (65+) Monday - Friday only</td>
+                    <td>Free</td>
+                    <td>Free</td>
+                    
+                </tr>
+                <tr>
+                    <td>Adult (18-64) </td>
+                    <td>$77</td>
+                    <td>$55</td>
+                    
+                </tr>
+                <tr>
+                    <td>Teen (13-17) / College</td>
+                    <td>$64</td>
+                    <td>$50</td>
+                   
+                </tr>
+                <tr>
+                    <td>Military</td>
+                    <td>$55</td>
+                    <td>$44</td>
+                   
+                </tr>
+                <tr>
+                    <td>Juniors (6-12)</td>
+                    <td>$55</td>
+                    <td>$40</td>
+                </tr>
+                <tr>
+                    <td>Seniors (65+)</td>
+                    <td>$33</td>
+                    <td>$30</td>
+                </tr>
+                <tr>
+                    <td>Tuckerbrook Area Only Ticket</td>
+                    <td>$55</td>
+                    <td>$40</td>
+                </tr>
+                <tr>
+                    <td>Eagle Cliff / Tuckerbrook Only Ticket</td>
+                    <td>$49</td>
+                    <td>$40</td>
+                </tr>
+                <tr>
+                    <td>Kids 5 and Under</td>
+                    <td>Free</td>
+                    <td>Free</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    
+   
+    <!-- javascript -->
+    <script src="js/topNav.js"></script>
+    <script src="js/accordion.js"></script>
+
+</body>
+
+</html>

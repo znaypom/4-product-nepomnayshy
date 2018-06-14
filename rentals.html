@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <!-- character encoding -->
+    <meta charset="UTF-8">
+    <!-- title tag -->
+    <title>Product/Company Page Project</title>
+    <!-- mobile-friendly viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- W3.CSS stylesheet -->
+    <link rel="stylesheet" type="text/css" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!-- custom style -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- font -->
+    <link href='https://fonts.googleapis.com/css?family=Questrial' rel='stylesheet'>
+    <style>
+        body {
+            font-family: 'Questrial';
+            font-size: 22px;
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- topnav tablet and desktop -->
+    <div class="w3-bar2 w3-bar w3-theme fixednav w3-top" id="home">
+        <a href="index.html" class="w3-bar-item w3-button">Home</a>
+        <a href="tickets.html" class="w3-bar-item2 w3-button w3-hide-small">Tickets and Season Passes</a>
+        <a href="rentals.html" target="_self" class="w3-bar-item2 w3-button w3-hide-small">Rentals</a>
+        <a href="lessons.html" target="_self" class="w3-bar-item2 w3-button w3-hide-small">Lessons</a>
+        <a href="ski-ride.html" target="_self" class="w3-bar-item2 w3-button w3-hide-small">Ski and Ride</a>
+        <a href="javascript:void(0)" class=" w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="topNav()">&#9776;</a>
+    </div>
+    <!-- topnav mobile -->
+
+    <div id="mobileNav" class="w3-bar-block w3-theme-l4 w3-hide w3-hide-large w3-hide-medium fixednav2 w3-top">
+        <a href="tickets.html" class="w3-bar-item w3-button2 w3-hover-text-white">Tickets and Season Passes</a>
+        <a href="rentals.html" class="w3-bar-item w3-button2 w3-hover-text-white">Rentals</a>
+        <a href="lessons.html" class="w3-bar-item w3-button2 w3-hover-text-white">Lessons</a>
+        <a href="ski-ride.html" class="w3-bar-item w3-button2 w3-hover-text-white">Ski and Ride</a>
+    </div>
+
+
+    <!-- Header -->
+    <div class="w3-container-heading w3-container w3-black">
+        <div class="w3-container w3-display-middle w3-center w3-border w3-border-white">
+            <p class="w3-jumbo">Rentals</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <img class="myImg" src="img/tuning-shop.jpg" alt="tuning-shop">
+    </div>
+
+    <button onclick="accordion('1')" class="w3-button w3-block w3-left-align w3-theme">
+Rental Shop</button>
+
+
+    <div id="1" class="w3-container w3-hide w3-light-blue card-padding-2">
+        <div class="w3-card-4">
+            <header class="w3-container w3-theme">
+                <h1>Rentals</h1>
+            </header>
+
+
+            <table class="w3-container w3-table w3-striped w3-bordered w3-white">
+                <tr>
+                    <th>Rates</th>
+                    <th>1 Day</th>
+                    <th>1/2 Day</th>
+                    <th>2 Day</th>
+                    <th>3 Day</th>
+                    <th>Each ADD. Day</th>
+                </tr>
+                <tr>
+                    <td>Skis Boots and Poles</td>
+                    <td>$43</td>
+                    <td>$36</td>
+                    <td>$77</td>
+                    <td>$107</td>
+                    <td>$29</td>
+                </tr>
+                <tr>
+                    <td>Snowboard and boots</td>
+                    <td>$43</td>
+                    <td>$36 </td>
+                    <td>$77</td>
+                    <td>$107 </td>
+                    <td>$29</td>
+                </tr>
+                <tr>
+                    <td>High Preformance Ski Rentals</td>
+                    <td>$50</td>
+                    <td>$44</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>Helmet Rental</td>
+                    <td>$15</td>
+                    <td>$10</td>
+                    <td>$24</td>
+                    <td>$32</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>Skis and Poles Only</td>
+                    <td>$33</td>
+                    <td>$30</td>
+                    <td>$53</td>
+                    <td>$80</td>
+                    <td>$18</td>
+                </tr>
+                <tr>
+                    <td>Ski Boots Only</td>
+                    <td>$33</td>
+                    <td>$30</td>
+                    <td>$46</td>
+                    <td>$67</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>Snowboard Boots Only</td>
+                    <td>$30</td>
+                    <td>$30</td>
+                    <td>$46</td>
+                    <td>$67</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>Poles Only</td>
+                    <td>$10 per day</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>Seasonal Ski Rental</td>
+                    <td>$189</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>Seasonal Snowboard Rental</td>
+                    <td>$35</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+
+            </table>
+        </div>
+    </div>
+
+    <button onclick="accordion('2')" class="w3-button w3-block w3-left-align w3-theme">
+Repair Shop</button>
+
+
+    <div id="2" class="w3-container w3-hide w3-light-blue card-padding-2">
+        <div class="w3-card-4">
+            <header class="w3-container w3-theme">
+                <h1>2018-19 Repair Rates</h1>
+            </header>
+
+            <div class="w3-container w3-white">
+
+
+
+                <b>Basic Ski Stone Grind - $42</b> <h5>Basic grind and ceramic disc edge and buff wax.</h5>
+
+
+                <b>Snowboard Basic Tune - $42</b> <h5>Wet belt grind, wet belt side edge and buff wax. (add $10 for base repair)</h5>
+
+
+                <b>Factory Finish: Skis - $48</b> <h5>Base grind, structured base, ceramic disc base and side edge and Wax Future</h5>
+
+
+                <b>Full Stone Grind: Skis -$54</b> <h5>Base repair with structured base, ceramic disc base and side edge and Wax Future</h5>
+
+
+                <b>Coaches Choice: Skis -$62</b> <h5>Base grind according to venue and base bevels only. Race prep and wax add $45.</h5>
+
+
+                <b>Buff Wax - $15</b> 
+
+
+                <b>Wax Future - $20</b>
+
+                <b>Binding Adjustment/Release Check - $30</b>
+
+                <b>Alpine Binding Installation/Remount - $40</b> <h5>Installation/Binding Check</h5>
+
+                <b>Touring/Backcountry Binding Installation/Remount - $50</b> <h5>*additional labor charges may apply</h5>
+
+                <b>Boot Stretch - $30</b> <h1></h1>
+
+                <b>Boot Fitting - $30 minimum</b> <h1></h1>
+
+                <b>Pole Cut - $10</b> <h1></h1>
+
+                <b>Labor - $60 / hour</b> <h1></h1>
+
+                <b>Minimum Labor Charge - $5</b> <h1></h1>
+
+                <b>*Season Passholders receive 20% off of tune-ups! (some exclusions apply)</b> <h1></h1>
+
+            </div>
+
+
+
+        </div>
+    </div>
+
+    <!-- javascript -->
+    <script src="js/topNav.js"></script>
+    <script src="js/accordion.js"></script>
+
+</body>
+
+</html>

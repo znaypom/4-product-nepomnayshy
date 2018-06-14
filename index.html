@@ -13,13 +13,143 @@
     <link rel="stylesheet" type="text/css" href="https://www.w3schools.com/w3css/4/w3.css">
     <!-- custom style -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- font -->
+    <link href='https://fonts.googleapis.com/css?family=Questrial' rel='stylesheet'>
+    <style>
+        body {
+            font-family: 'Questrial';
+            font-size: 22px;
+            background-color: black;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>Hello World</h1>
-    <h2>Testing 123</h2>
 
-        
+    <!-- topnav tablet and desktop -->
+    <div class="w3-bar2 w3-bar w3-theme fixednav w3-top" id="home">
+        <a href="#home" class="w3-bar-item w3-button">Home</a>
+        <a href="tickets.html" class="w3-bar-item2 w3-button w3-hide-small">Tickets and Season Passes</a>
+        <a href="rentals.html" target="_self" class="w3-bar-item2 w3-button w3-hide-small">Rentals</a>
+        <a href="lessons.html" target="_self" class="w3-bar-item2 w3-button w3-hide-small">Lessons</a>
+        <a href="ski-ride.html" target="_self" class="w3-bar-item2 w3-button w3-hide-small">Ski and Ride</a>
+        <a href="javascript:void(0)" class=" w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="topNav()">&#9776;</a>
+    </div>
+    <!-- topnav mobile -->
+
+    <div id="mobileNav" class="w3-bar-block w3-theme-l4 w3-hide w3-hide-large w3-hide-medium fixednav2 w3-top">
+        <a href="tickets.html" class="w3-bar-item w3-button2 w3-hover-text-white">Tickets and Season Passes</a>
+        <a href="rentals.html" class="w3-bar-item w3-button2 w3-hover-text-white">Rentals</a>
+        <a href="lessons.html" class="w3-bar-item w3-button2 w3-hover-text-white">Lessons</a>
+        <a href="ski-ride.html" class="w3-bar-item w3-button2 w3-hover-text-white">Ski and Ride</a>
+    </div>
+
+
+    <!-- Header -->
+    <div class="w3-container-heading w3-container w3-black">
+        <div class="w3-container w3-display-middle w3-center w3-border w3-border-white">
+            <p class="w3-jumbo">We Are Cannon</p>
+        </div>
+    </div>
+
+    <!-- Image -->
+    <div class="container">
+
+        <img id="myImg" src="img/Fullscreen%20Img.jpg" alt="cannon">
+    </div>
+
+    <!-- Container (About Section) -->
+    <button onclick="accordion('1')" class="w3-button w3-block w3-left-align w3-theme">
+History</button>
+
+    <div id="1" class="w3-container w3-hide w3-light-grey">
+        <h2>History</h2>
+        <div class="a">
+            <h6> Cannon Mountain was the site of the first passenger aerial tramway in North America. From its construction in 1938 to its 1980 retirement, the first tram carried 6,581,338 passengers up the 2.1-mile (3.4 km) route to near the summit of Cannon Mountain. On May 24, 1980, the Cannon Mountain Aerial Tramway II was dedicated. Alexander Bright, a skier involved in developing the sport in the area, conceived the idea of building a tramway in New Hampshire during his trip to Europe as a member of the US Olympic Ski Team in 1933. In Europe, Bright had seen passenger-carrying tramways and recognized that building one in New Hampshire could foster the growth of skiing and summer tourism in the White Mountains. Bright persuaded L.R. Batemen of the American Steel and Wire Company to conduct a preliminary survey to locate a suitable site for a tramway and to estimate construction costs. In November 1933, the first physical survey of Franconia Notch was made by Batemen, E.J. Lloyd and Roland Peabody of Franconia, who was called in as an advisor because of his knowledge of the area and his enthusiasm for recreation development in the White Mountains. Bright's idea appealed to an increasing numbers of people and groups associate with winter sports, and Peabody, through his enthusiasm, aroused the support of the New Hampshire legislature.</h6>
+        </div>
+
+        <div class="a">
+            <h6> In the spring of 1934, after estimating construction costs, completing research on operating costs and potential income, and examining seven promising sites for a tramway, a committee appointed by Governor John G. Winant unanimously recommended Cannon Mountain.</h6>
+        </div>
+
+        <div class="a">
+            <h6> Environmental concerns were a principal reason for selecting the Cannon site. At Cannon, it was possible to build a tramway with only minor cutting of forests and without marring the scenic beauty of the Notch. In addition, the area was already a major route for tourists in the White Mountains.</h6>
+        </div>
+
+        <div class="a">
+            <h6> Legislation was drafted and passed in 1935, but the project hit a snag when federal financing, a provision of the legislation, proved unavailable. In June 1937, a bill was passed by the New Hampshire legislature and signed into law by Governor Francis P. Murphy authorizing a $250,000 bond issue to finance erection of the tramway. Later Roland E. Peabody was named Managing Director of the Cannon Mountain Aerial Tramway. In August, American Steel Wire Company was awarded the construction contract and the project rapidly took shape. As the contractor began construction of the tramway, a 200-man CCC camp began work on a parking area and developing the Coppermine, Trucker Brook, Kinsman and Cannon ski trails. Old logging roads on the mountain had been used for skiing since 1929, and the famous Richard Taft Race Course had been developed in 1931-1932.</h6>
+        </div>
+
+        <div class="a">
+            <h6> To build the final passenger tramway it was first necessary to construct a freight tramway to carry materials. Carrying cement and materials by backpack, four dozen men completed the formidable task in December. Construction of the tramway continued through the winter, with almost all the work, pouring 32 carloads of cement, assembling 232 tons of steel and four miles (6 km) of cable, done by hand. It was considered an outstanding engineering feat of the period. On June 28, 1938, after nine months of construction and one year after the passage of legislation, North America’s first aerial tramway was dedicated.</h6>
+        </div>
+
+        <div class="a">
+            <h6> The opening attracted newspapermen, photographers, newsreel cameramen and syndicated writers from across the nation. Later Lowell Thomas made evening news broadcasts from both the valley and mountain stations. The tramway quickly became a major tourist attraction, carrying 163,000 passengers in its first year.</h6>
+        </div>
+
+        <!-- Trigger/Open the Modal -->
+        <button onclick="document.getElementById('id01').style.display='block'" class="w3-button">More about Cannon</button>
+
+        <!-- The Modal -->
+        <div id="id01" class="w3-modal">
+            <div class="w3-modal-content">
+                <div class="w3-container">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                    <div class="a">
+                        <h6>As its proponents had predicted, the tramway proved not only a sound financial investment for the state, but also confirmed the viability of skiing as an industry in New Hampshire. Cannon Mountain, with the highest vertical drop of any ski mountain in the state, became the pinnacle of Eastern skiing. The success of the state's venture attracted the interest and investment of the private sector, and the ski industry in New Hampshire grew and prospered. In early 1965, Commissioner George Gilman of the Department of Resources and Economic Development recognized the need to begin planning for the replacement of the original tramway. Although still in prime operating condition, thanks to a diligent maintenance program, the cost of custom-made replacement parts and the tramway's limited passenger capacity made replacement desirable and economically practical. The replacement project was authorized by the New Hampshire legislature in 1977 after a study by consulting engineer Robert Heron proved the project feasible.</h6>
+                    </div>
+                    <div class="a">
+                        <h6> In July 1978, a contract for the replacement project was awarded to Nuova Agudio. Preliminary construction begun in July 1978, with the lower terminal completed in April 1979. During the summer of 1979, helicopters were briefly used to airlift some major components. Unlike the original construction project in 1937, there was no need to erect a freight tramway since the existing tramway could be used as the work-horse for moving materials up the mountain. Even as construction proceeded heavy summer passenger traffic was maintained. Construction continued through the cold but nearly snowless winter of 1979-1980. In February 1980, the tramway successfully passed a series of stringent operational tests conducted by Nuova Agudio and was approved for passenger traffic by the State of New Hampshire. Cannon Mountain Aerial Tramway II ascends the famous slopes of Cannon Mountain for 5,359 feet (1,633 m). Its two cabins, each with a capacity for 80 passengers and one attendant, travel at a speed of 1,500 feet (460 m) per minute, with an hourly passenger capacity of 1,540, or 770 in each direction, more than three times the capacity of the original tramway.</h6>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <button onclick="accordion('2')" class="w3-button w3-block w3-left-align w3-theme">
+Employment</button>
+
+    <div id="2" class="w3-container w3-hide w3-light-grey">
+
+        <h2>Lift Operations – Ski Lift Attendants</h2>
+        <h5>Now taking applications for full-time and part-time employees to work on ski lifts at Cannon for the 2017/18 winter season. Will train. Season runs from late November to mid-April. We’re looking for positive, reliable people who enjoy being outside and like working directly with the public. Lifting and shoveling required. Starting pay LG 5, $11.80 per hour.</h5>
+        <b>Contact Jeff Varin, Cannon Mountain Lift Supervisor, at Jeffrey.Varin@nh.gov, or call 1-603-823-7722 ext. 797</b>
+
+        <div class="w3-container-contact w3-grey">
+            <h2>Snowsports School – Ski and Snowboard Instructors, Desk and Nursery staff and Rental Tech</h2>
+            <h5>Now taking applications for full-time and part-time employees to work as Ski and Snowboard instructors, as well as Desk and Nursery staff and a Rental Tech at Cannon for the 2018/19 winter season.  Cannon Mountain Snowsports School is a registered PSIA/AASI school.  Season runs from late November to mid-April.  We’re looking for positive, reliable people who enjoy working directly with the public and children.  Please contact Snowsports Director for salary range.</h5>
+            <b>Contact Irv Fountain, Cannon Mountain Snowsports Director, at irving.fountain@nh.gov or 1-603-823.7722 ext. 712</b>
+        </div>
+        <h2>Adaptive Sports - Volunteers</h2>
+        <h5>Our partners, the Adaptive Sports Partners of the North Country are hosting New Volunteer Information Sessions on October 28 and 29 and November 2 at their office in Franconia, NH. Volunteers needed for many different sport, recreation and wellness activities. For more info or to sign up, please call 603-823-5232 or visit www.AdaptiveSportsPartners.org</h5>
+
+        <div class="w3-container-contact w3-grey">
+            <h2>CENTERPLATE, INC. - Food and Beverage positions</h2>
+            <p>Help wanted for cooks, cashiers and concessions. Must be 16+ years old. Steven.Marcum@Centerplate.com 603-823-7722 for more details</p>
+        </div>
+    </div>
+    <button onclick="accordion('3')" class="w3-button w3-block w3-left-align w3-theme">
+Contact</button>
+
+
+    <div id="3" class="w3-container w3-hide w3-light-grey w3-center">
+
+        <h1>Contact Us</h1>
+        <h5>Fax Number: 603-823-8088</h5>
+        <h5>Snow Phone: 603-823-7771</h5>
+        <h5>Mailing and Shipping Address Cannon Mountain Aerial Tramway and Ski Area</h5>
+
+
+
+    </div>
+
+
+    <!-- javascript -->
+    <script src="js/topNav.js"></script>
+    <script src="js/accordion.js"></script>
+
 </body>
 
 </html>
